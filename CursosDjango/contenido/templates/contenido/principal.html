@@ -1,8 +1,22 @@
 {% extends "contenido/encabezado.html" %}
 
-{%block title%}Principal {%endblock%}
+{% block title %}
+    Principal
+{% endblock %}
 
-{%block contenido%}
-<h1>Bienvenidos</h1>
-    <p>Esta pestaña es para navegar entre los hipervinculos</p>
-{%endblock%}
+{%block imagen%}
+    {%load static%}
+ {%static 'inicio/images/home.png'%}
+ {%endblock%}
+
+{% block contenido %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center">Bienvenidos</h1>
+                <p class="lead text-center">Esta pestaña es para navegar entre los hipervínculos.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
